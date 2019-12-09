@@ -16,7 +16,7 @@ after_success:
   # Log in to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - dokcer push nuge/multi-client
-  - dokcer push nuge/multi-nginx
-  - dokcer push nuge/multi-server
-  - dokcer push nuge/multi-worker
+  - docker push nuge/multi-client
+  - docker push nuge/multi-nginx
+  - docker push nuge/multi-server
+  - docker push nuge/multi-worker
